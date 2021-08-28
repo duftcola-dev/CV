@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <link href="{{url_for('static',filename="/css/bootstrap.css" )}}" rel="stylesheet">
+
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col"></div>
+            <div class="col-10">
+                {%include "/includes/_navbar.html"%}
+            </div>
+            <div class="col"></div>
+        </div>
+
+        <div class="row">
+            <div class="col"></div>
+            <div class="col-10">
+            {%block body%}{%endblock%}
+            </div>
+            <div class="col"></div>
+        </div>
+    </div>
+    <script src="{{url_for('static',filename="/js/bootstrap.js" )}}"></script>
+</body>
+
+</html>
